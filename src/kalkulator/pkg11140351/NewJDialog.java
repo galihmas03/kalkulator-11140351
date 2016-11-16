@@ -84,24 +84,59 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 69, -1, -1));
 
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 98, -1, -1));
 
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 98, -1, -1));
 
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 98, -1, -1));
 
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 127, -1, -1));
 
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 127, -1, -1));
 
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 127, -1, -1));
 
         btn0.setText("0");
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 156, -1, -1));
 
         btnbersih.setText("c");
@@ -145,6 +180,41 @@ public class NewJDialog extends javax.swing.JDialog {
       tmp += "3";
       txttampilan.setText(tmp);
     }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+       tmp += "4";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        tmp += "5";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+      tmp += "6";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+       tmp += "7";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        tmp += "8";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        tmp += "9";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        tmp += "0";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn0ActionPerformed
 
     /**
      * @param args the command line arguments
