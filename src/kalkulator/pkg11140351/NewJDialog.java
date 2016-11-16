@@ -140,6 +140,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 156, -1, -1));
 
         btnbersih.setText("c");
+        btnbersih.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbersihActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnbersih, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 156, 39, -1));
 
         btnkoma.setText(",");
@@ -215,6 +220,14 @@ public class NewJDialog extends javax.swing.JDialog {
         tmp += "0";
       txttampilan.setText(tmp);
     }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnbersihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbersihActionPerformed
+       tmp = "";
+        a1=0;
+        a2=0;
+        hasil=0;
+        txttampilan.setText("");
+    }//GEN-LAST:event_btnbersihActionPerformed
 
     /**
      * @param args the command line arguments
