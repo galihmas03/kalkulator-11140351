@@ -148,6 +148,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnbersih, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 156, 39, -1));
 
         btnkoma.setText(",");
+        btnkoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkomaActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnkoma, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 156, 39, -1));
 
         btnplesmines.setText("+/-");
@@ -163,6 +168,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnkurang, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 98, 41, -1));
 
         btnkali.setText("x");
+        btnkali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaliActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnkali, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 127, 41, -1));
 
         btnbagi.setText("/");
@@ -228,6 +238,18 @@ public class NewJDialog extends javax.swing.JDialog {
         hasil=0;
         txttampilan.setText("");
     }//GEN-LAST:event_btnbersihActionPerformed
+
+    private void btnkomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkomaActionPerformed
+       tmp += ".";
+        txttampilan.setText(tmp);
+    }//GEN-LAST:event_btnkomaActionPerformed
+
+    private void btnkaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaliActionPerformed
+        a1 = Float.valueOf(tmp);
+        pilih = 3;
+        tmp = "";
+        txttampilan.setText("x");
+    }//GEN-LAST:event_btnkaliActionPerformed
 
     /**
      * @param args the command line arguments
