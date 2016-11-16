@@ -168,9 +168,19 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnhasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 131, 95, 48));
 
         btntambah.setText("+");
+        btntambah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btntambahActionPerformed(evt);
+            }
+        });
         getContentPane().add(btntambah, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 69, -1, -1));
 
         btnkurang.setText("-");
+        btnkurang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkurangActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnkurang, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 98, 41, -1));
 
         btnkali.setText("x");
@@ -182,6 +192,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnkali, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 127, 41, -1));
 
         btnbagi.setText("/");
+        btnbagi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbagiActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnbagi, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 156, 41, -1));
 
         pack();
@@ -265,6 +280,27 @@ public class NewJDialog extends javax.swing.JDialog {
             txttampilan.setText(String.valueOf(hasil));
         }
     }//GEN-LAST:event_btnplesminesActionPerformed
+
+    private void btntambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntambahActionPerformed
+              a1 = Float.valueOf(tmp);
+        pilih = 1;
+        tmp = "";
+        txttampilan.setText("+");
+    }//GEN-LAST:event_btntambahActionPerformed
+
+    private void btnkurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkurangActionPerformed
+        a1 = Float.valueOf(tmp);
+        pilih = 2;
+        tmp = "";
+        txttampilan.setText("-");
+    }//GEN-LAST:event_btnkurangActionPerformed
+
+    private void btnbagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbagiActionPerformed
+         a1 = Float.valueOf(tmp);
+        pilih = 4;
+        tmp = "";
+        txttampilan.setText(":");
+    }//GEN-LAST:event_btnbagiActionPerformed
 
     /**
      * @param args the command line arguments
