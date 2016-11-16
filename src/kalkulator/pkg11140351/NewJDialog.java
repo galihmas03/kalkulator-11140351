@@ -5,6 +5,8 @@
  */
 package kalkulator.pkg11140351;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author galih
@@ -18,8 +20,10 @@ public class NewJDialog extends javax.swing.JDialog {
      * Creates new form NewJDialog
      */
     public NewJDialog(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+        super(parent, "kalkulator");
         initComponents();
+        setLocationRelativeTo(null);
+        txttampilan.setHorizontalAlignment(JTextField.CENTER);
     }
 
     /**
@@ -53,8 +57,6 @@ public class NewJDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        txttampilan.setText("jTextField1");
         getContentPane().add(txttampilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 285, 40));
 
         btn1.setText("1");
