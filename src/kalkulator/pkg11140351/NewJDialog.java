@@ -165,6 +165,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnplesmines, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 69, 95, 45));
 
         btnhasil.setText("=");
+        btnhasil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnhasilActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnhasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 131, 95, 48));
 
         btntambah.setText("+");
@@ -301,6 +306,38 @@ public class NewJDialog extends javax.swing.JDialog {
         tmp = "";
         txttampilan.setText(":");
     }//GEN-LAST:event_btnbagiActionPerformed
+
+    private void btnhasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhasilActionPerformed
+        switch(pilih){
+            case 1:
+            a2 = Float.valueOf(tmp);
+            hasil = (float) a1 + a2;
+            tmp = String.valueOf(hasil);
+            txttampilan.setText(tmp);
+            break;
+            case 2:
+            a2 = Float.valueOf(tmp);
+            hasil = (float) a1 - a2;
+            tmp = String.valueOf(hasil);
+            txttampilan.setText(tmp);
+            break;
+            case 3:
+            a2 = Float.valueOf(tmp);
+            hasil = (float) a1 * a2;
+            tmp = String.valueOf(hasil);
+           txttampilan.setText(tmp);
+            break;
+            case 4:
+            a2 = Float.valueOf(tmp);
+            hasil = (float) a1 / a2;
+            tmp = String.valueOf(hasil);
+            txttampilan.setText(tmp);
+            break;
+        }
+        tmp = "";
+        a1 = 0;
+        a2 = 0;
+    }//GEN-LAST:event_btnhasilActionPerformed
 
     /**
      * @param args the command line arguments
