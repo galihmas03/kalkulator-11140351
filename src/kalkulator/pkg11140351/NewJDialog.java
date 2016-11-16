@@ -60,12 +60,27 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(txttampilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 285, 40));
 
         btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 69, -1, -1));
 
         btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 69, -1, -1));
 
         btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 69, -1, -1));
 
         btn4.setText("4");
@@ -115,6 +130,21 @@ public class NewJDialog extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        tmp += "1";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+         tmp += "2";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+      tmp += "3";
+      txttampilan.setText(tmp);
+    }//GEN-LAST:event_btn3ActionPerformed
 
     /**
      * @param args the command line arguments
