@@ -5,6 +5,7 @@
  */
 package kalkulator.pkg11140351;
 
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -156,6 +157,11 @@ public class NewJDialog extends javax.swing.JDialog {
         getContentPane().add(btnkoma, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 156, 39, -1));
 
         btnplesmines.setText("+/-");
+        btnplesmines.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnplesminesActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnplesmines, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 69, 95, 45));
 
         btnhasil.setText("=");
@@ -250,6 +256,15 @@ public class NewJDialog extends javax.swing.JDialog {
         tmp = "";
         txttampilan.setText("x");
     }//GEN-LAST:event_btnkaliActionPerformed
+
+    private void btnplesminesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplesminesActionPerformed
+         if (hasil == 0) {
+            JOptionPane.showMessageDialog(this, "Maaf ga tau gue hasilnya");
+        } else {
+            hasil *= -1;
+            txttampilan.setText(String.valueOf(hasil));
+        }
+    }//GEN-LAST:event_btnplesminesActionPerformed
 
     /**
      * @param args the command line arguments
